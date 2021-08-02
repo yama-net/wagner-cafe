@@ -1,0 +1,624 @@
+@charset 'UTF-8';
+
+/* 基本設定 */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+section h2 {
+    border-left: 2px solid gray;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+/* ヘッダー */
+header h1 {
+    margin: 0;
+}
+
+header h1 img {
+    width: 100%;
+    height: auto;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #F0DDC3;
+}
+
+header ul li {
+    list-style: none;
+    padding: 10px 35px;
+    font-size: 18px;
+    border-left: 1px dotted black;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #222;
+}
+
+.cafe {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    background: linear-gradient(to right, #F0DDC3, #fff);
+}
+
+.cafe-inner {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.cafe-inner p {
+    line-height: 40px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cafe-inner p span {
+    font-size: 40px;
+}
+
+.person {
+    display: flex;
+    width: 960px;
+    margin: 0px auto;
+    justify-content: center;
+}
+
+.person1 img,
+.person2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.person1 p,
+.person2 p {
+    text-align: center;
+}
+
+.person1 img,
+.person1 p {
+    margin-right: 50px;
+}
+
+.composer {
+    width: 100%;
+    height: auto;
+}
+
+.composer h2 {
+    margin-left: 150px;
+}
+
+.composer-inner {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.composer-inner p {
+    font-size: 18px;
+}
+
+.composer-inner p span {
+    font-size: 40px;
+}
+
+.composer-inner h3 {
+    padding-left: 30px;
+}
+
+.famous-song ul li {
+    list-style: decimal;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.wagner img {
+    border-radius: 50%;
+}
+
+/* メニュー */
+#menu {
+    width: 100%;
+    min-height: 480px;
+    background: url(img/coffee2.jpg) no-repeat bottom;
+    background-size: 100%;
+}
+
+.menu-inner {
+    width: 960px;
+    padding-left: 120px;
+}
+
+.menu-title {
+    padding: 30px;
+    margin: 0;
+}
+
+.menu-title h2 {
+    border-left: 2px solid #FFF;
+    margin: 0;
+}
+
+.menu-inner table tr {
+    font-size: 18px;
+    line-height: 50px;
+    color: #FFF;
+}
+
+.menu-inner table tr th {
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+.menu-inner table tr td {
+    padding: 0 10px;
+}
+
+.menu-title {
+    color: #FFF;
+}
+
+.menu1:after {
+    content: '1番人気';
+    background-color: red;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-left: 15px;
+    line-height: 20px;
+    vertical-align: text-top;
+}
+
+.menu2:after {
+    content: 'おすすめ';
+    background-color: red;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin-left: 15px;
+    line-height: 20px;
+    vertical-align: text-top;
+}
+
+.menu-inner {
+    width: 650px;
+}
+
+.menu-inner ul li span {
+    font-size: 40px;
+}
+
+.menu-coffee img {
+    border-radius: 50%;
+}
+
+/* イベント */
+#event {
+    background: linear-gradient(to right, #F0DDC3, #fff);
+    padding: 30px;
+}
+
+.event-inner {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.event-day dl {
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.event-day dl dt {
+    float: left;
+    padding: 0 20px;
+}
+
+.event-day dl dd span {
+    padding-right: 20px;
+}
+
+.event-day dl dd::after {
+    content: '詳しくはこちら';
+    background-color: green;
+    color: #FFF;
+    padding: 0 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 営業時間 */
+#open {
+    width: 100%;
+    height: auto;
+    margin: 30px 0 30px;
+}
+#open h2 {
+    margin-left: 150px;
+}
+
+.open-inner {
+    display: flex;
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.open-inner1 {
+    margin-right: 20px;
+}
+
+.open-inner2 {
+    width: 700px;
+    height: auto;
+    font-size: 22px;
+    line-height: 40px;
+    margin-top: -40px;
+    padding-left: 80px;
+}
+
+.open-inner p:first-child {
+    font-size: 32px;
+    margin-left: -25px;
+}
+
+.open-inner2 dl dt {
+    float: left;
+}
+
+.open-inner2 dl dd {
+    padding-left: 80px;
+}
+
+/* アクセス */
+#access {
+    background: linear-gradient(to right, #F0DDC3, #fff);
+    padding: 30px 0 30px;
+}
+
+#access h2 {
+    margin-left: 150px;
+}
+
+.access-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.access-inner2 {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.access-inner2 dt::before {
+    content: '■';
+    display: inline-block;
+    transform: rotate(-45deg);
+    color: green;
+}
+
+.access-inner2 dl dd {
+    margin-left: 20px;
+}
+
+.access-inner2 dl dd span {
+    color: red;
+    font-weight: bold;
+}
+
+/* お問い合わせ */
+#contact {
+    width: 960px;
+    margin: 30px auto;
+}
+
+.contact-inner dl dt {
+    float: left;
+}
+
+.contact-inner dl dd {
+    margin-left: 100px;
+}
+
+/* フッター */
+footer {
+    background-color: #F0DDC3;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+
+/* タブレット、画面横幅1024px以下 */
+@media (max-width: 1024px) {
+
+    /* ヘッダー */
+    header h1 img {
+        height: 80vh;
+    }
+
+    /* カフェ・ワーグナーとは */
+    .cafe-inner {
+        max-width: 40rem;
+    }
+
+    .cafe-inner h2 {
+        margin-left: 2rem;
+    }
+
+    .cafe-inner p {
+        overflow-wrap: break-word;
+    }
+
+    .person1 img,
+    .person2 img {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .person2 {
+        margin-right: 12rem;
+    }
+
+    /* リヒャルト・ワーグナーについて */
+    .composer {
+        max-width: 40rem;
+    }
+
+    .composer h2 {
+        margin-left: 2rem;
+    }
+
+    .composer-inner {
+        display: block;
+        padding-left: 2rem;
+    }
+
+    .wagner {
+        margin-left: 7rem;
+    }
+
+
+    /* メニュー */
+    #menu {
+        background: url(img/coffee2.jpg) no-repeat top;
+    }
+
+    .menu-inner {
+        margin-top: 3rem;
+    }
+
+    /* イベント */
+    .event-inner {
+        max-width: 35rem;
+    }
+
+
+    /* 営業時間 */
+    #open h2 {
+        margin-left: 2rem;
+    }
+
+    .open-inner {
+        max-width: 40rem;
+        display: block;
+    }
+
+    .open-inner2 {
+        padding: 2rem 0 0 2rem;
+        margin-left: 0;
+        font-size: 1.2rem;
+        max-width: 35rem;
+    }
+
+    .open-inner2 p {
+        overflow-wrap: break-word;
+    }
+
+    /* アクセス */
+    #access h2 {
+        margin-left: 2rem;
+    }
+
+    .access-inner {
+        max-width: 40rem;
+        display: block;
+    }
+
+    .access-inner1 iframe {
+        max-width: 45rem;
+    }
+
+    /* お問い合わせ */
+    #contact h2 {
+        margin-left: 2rem;
+    }
+    .contact-inner {
+        max-width: 40rem;
+        padding: 0.5rem 2rem 2rem 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+    /* スマホ、画面横幅599px以下 */
+@media (max-width: 599px) {
+    
+    html {
+        font-size: 62.5%;
+    }
+
+    /* ヘッダー */
+    header h1 img {
+        height: 55vh;
+    }
+
+    header ul li {
+        display: none;
+    }
+
+    /* カフェ・ワーグナーとは */
+    .cafe {
+        padding: 2rem 5rem 2rem 2rem;
+    }
+   
+    .cafe-inner {
+        max-width: 45rem;
+    }
+
+    .cafe-inner h2 {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    }
+
+    .cafe-inner p {
+        font-size: 1.6rem;
+        overflow-wrap: break-word;
+    }
+
+    .br-change {
+        display: none;
+    }
+
+    .person {
+        display: block;
+        max-width: 45rem;
+    }
+
+    .person1 {
+        margin-left: 6rem;
+    }
+
+    .person1,
+    .person2 {
+        text-align: center;
+    }
+
+    .person1 img,
+    .person2 img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .person2 {
+        margin:0;
+    }
+
+    .person1 p,
+    .person2 p {
+        font-size: 2rem;
+    }
+
+    /* リヒャルト・ワーグナーについて */
+    .composer h2 {
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+
+    .composer-inner {
+        max-width: 45rem;
+        display: block;
+        padding-left: 3.5rem;
+    }
+
+    .composer-inner2 p {
+        line-height: 3.5rem;
+    }
+
+    
+    .composer-inner2 h3 {
+        font-size: 1.8rem;
+    }
+
+
+    /* メニュー */
+    .menu-inner {
+        max-width: 45rem;
+        height: auto;
+        padding: 0;
+    }
+
+    /* イベント */
+    .event-inner {
+        max-width: 45rem;
+    }
+  
+    .event-day dl dt {
+        float: none;
+    }
+
+    .event-day dl dd span {
+        float: none;
+    }
+
+    /* 営業時間 */
+    #open h2 {
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+
+    .open-inner {
+        max-width: 45rem;
+    }
+
+    .open-inner1 img {
+        width: 50%;
+    }
+
+    .open-inner2 {
+        padding-top: 4rem;
+        font-size: 1.8rem;
+        max-width: 45rem;
+    }
+
+    .open-inner2 p {
+        overflow-wrap: break-word;
+    }
+
+    /* アクセス */
+    #access h2 {
+        margin-left: 2rem;
+    }
+
+    .access-inner {
+        max-width: 45rem;
+        display: block;
+    }
+
+    /* お問い合わせ */
+
+
+    .contact-inner {
+        max-width: 45rem;
+        padding: 0.5rem 2rem 2rem 2rem;
+        font-size: 1.8rem;
+    }
+
+    /* フッター */
+    footer {
+        font-size: 1.4rem;
+    }
+
+}
